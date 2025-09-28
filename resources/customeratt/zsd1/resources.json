@@ -1,0 +1,81 @@
+{
+    "resources": [
+        {
+            "name": "../../mosque/zsd1/model/models.js"
+        },
+        {
+            "name": "../../mosque/zsd1/manifest.json"
+        },
+        {
+            "name": "../../mosque/zsd1/controller/CustomerAtt.controller.js"
+        },
+        {
+            "name": "../../mosque/zsd1/Component.js"
+        },
+        {
+            "name": "../../mosque/zsd1/manifest-bundle.zip"
+        },
+        {
+            "name": "../../mosque/zsd1/Component-preload.js",
+            "merged": true
+        },
+        {
+            "name": "../../mosque/zsd1/model/models-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../mosque/zsd1/i18n/i18n.properties",
+            "raw": "i18n/i18n.properties"
+        },
+        {
+            "name": "../../mosque/zsd1/controller/CustomerAtt-dbg.controller.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../mosque/zsd1/Component-dbg.js",
+            "isDebug": true
+        },
+        {
+            "name": "../../sap-ui-version.json"
+        },
+        {
+            "name": "neo-app.json"
+        },
+        {
+            "name": "di.code-validation.core_issues.json"
+        },
+        {
+            "name": "../../mosque/zsd1/localService/ZSFA_MOSQUEPROOFOFDELIVERY_SRV/metadata.xml"
+        },
+        {
+            "name": "../../mosque/zsd1/view/CustomerAtt.view.xml"
+        },
+        {
+            "name": "../../mosque/zsd1/localService/metadata.xml"
+        },
+        {
+            "name": "../../mosque/zsd1/fragments/filepreview.fragment.xml"
+        },
+        {
+            "name": "../../mosque/zsd1/fragments/ValueHelpDialogSoff.fragment.xml"
+        },
+        {
+            "name": "../../mosque/zsd1/fragments/ValueHelpDialogRep.fragment.xml"
+        },
+        {
+            "name": "../../mosque/zsd1/fragments/ValueHelpDialogDivison.fragment.xml"
+        },
+        {
+            "name": "../../mosque/zsd1/fragments/ValueHelpDialogChannel.fragment.xml"
+        },
+        {
+            "name": "../../mosque/zsd1/fragments/ValueHelpDialog.fragment.xml"
+        },
+        {
+            "name": "../../mosque/zsd1/css/style.css"
+        },
+        {
+            "name": "../../mosque/zsd1/index.html"
+        }
+    ]
+}

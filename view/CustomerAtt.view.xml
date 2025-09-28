@@ -1,0 +1,39 @@
+<mvc:View controllerName="mosque.zsd1.controller.CustomerAtt" xmlns:mvc="sap.ui.core.mvc" displayBlock="true" xmlns="sap.m"
+	xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns:u="sap.ui.unified">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<VBox class="sapUiSmallMargin">
+							<f:SimpleForm id="idCustomerDetails" editable="true" layout="ResponsiveGridLayout" title="Enter Order ID" labelSpanXL="3"
+								labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0"
+								columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+								<f:content>
+									<Label text="Order ID"/>
+									<Input id="idTemp" submit="onSubmit"/>
+									<Label text="Customer Name"/>
+									<Text id="idName" text="{/Zname}"/>
+								</f:content>
+							</f:SimpleForm>
+							<f:SimpleForm id="idCustomerDocuments" editable="true" layout="ResponsiveGridLayout" title="Proof Of delivery Images" labelSpanXL="3"
+								labelSpanL="3" labelSpanM="3" labelSpanS="12" adjustLabelSpan="false" emptySpanXL="4" emptySpanL="4" emptySpanM="4" emptySpanS="0"
+								columnsXL="1" columnsL="1" columnsM="1" singleContainerFullSize="false">
+								<f:content>
+									<Label text="Mosque Image"/>
+									<Button id="idImage1Btn" text ="Mosque Image" type="Accept" press="openImage1File"/>
+									<Label text="SKU Image"/>
+									<Button id="idImage2Btn" text ="SKU Image" type="Accept" press="openImage2File"/>
+									<Label text="Additional Image 3"/>
+									<Button id="idImage3Btn" text ="Additional Image 3" type="Accept" press="openImage3File"/>
+									<Label text="Additional image 4"/>
+									<Button id="idImage4Btn" text ="Additional Image 4" type="Accept" press="openImage4File"/>
+								</f:content>
+							</f:SimpleForm>
+						</VBox>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>

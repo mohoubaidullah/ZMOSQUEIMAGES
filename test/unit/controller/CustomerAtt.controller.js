@@ -1,0 +1,1 @@
+sap.ui.define(["customeratt/zsd1/controller/CustomerAtt.controller"],function(t){"use strict";QUnit.module("CustomerAtt Controller");QUnit.test("I should test the CustomerAtt controller",function(o){var e=new t;e.onInit();o.ok(e)})});

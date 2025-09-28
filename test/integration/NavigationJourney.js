@@ -1,0 +1,1 @@
+sap.ui.define(["sap/ui/test/opaQunit","./pages/CustomerAtt"],function(e){"use strict";QUnit.module("Navigation Journey");e("Should see the initial page of the app",function(e,t,i){e.iStartMyApp();i.onTheAppPage.iShouldSeeTheApp();i.iTeardownMyApp()})});

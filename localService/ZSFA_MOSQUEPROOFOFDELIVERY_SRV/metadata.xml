@@ -1,0 +1,40 @@
+<edmx:Edmx xmlns:edmx="http://schemas.microsoft.com/ado/2007/06/edmx"
+	xmlns:m="http://schemas.microsoft.com/ado/2007/08/dataservices/metadata" xmlns:sap="http://www.sap.com/Protocols/SAPData" Version="1.0">
+	<edmx:DataServices m:DataServiceVersion="2.0">
+		<Schema xmlns="http://schemas.microsoft.com/ado/2008/09/edm" Namespace="ZSFA_MOSQUEPROOFOFDELIVERY_SRV" xml:lang="en" sap:schema-version="1">
+			<EntityType Name="status" sap:content-version="1">
+				<Key><PropertyRef Name="Zcustomer"/></Key><Property Name="Zcustomer" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="customer id"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zstatus" Type="Edm.String" Nullable="false" MaxLength="1" sap:unicode="false" sap:label="status" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zcomments" Type="Edm.String" Nullable="false" MaxLength="256" sap:unicode="false" sap:label="comments" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="ZdocumentType" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="document"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="attachments" sap:content-version="1">
+				<Key><PropertyRef Name="vbeln"/></Key><Property Name="vbeln" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="vbeln" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="zimage1_content" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="CONTENT" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="zimage_type" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Char255"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="zimage2_content" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Char255"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="zimage2_type" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="CONTENT" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="zimage3_content" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Char255"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="zimage3_type" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Char255"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="zimage4_content" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="CONTENT" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="zimage4_type" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Char255"
+					sap:creatable="false" sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zid" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Char255" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zsl_content" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="CONTENT" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zsl_type" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Char255" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zsl" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Char255" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="error" Type="Edm.String" Nullable="false" MaxLength="100" sap:unicode="false" sap:label="error" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Zname" Type="Edm.String" Nullable="false" MaxLength="50" sap:unicode="false" sap:label="name" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityType Name="attachmentsContent" sap:content-version="1">
+				<Key><PropertyRef Name="vbeln"/><PropertyRef Name="Ztype"/></Key><Property Name="vbeln" Type="Edm.String" Nullable="false" MaxLength="10" sap:unicode="false" sap:label="vbeln" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Ztype" Type="Edm.String" Nullable="false" MaxLength="20" sap:unicode="false" sap:label="type" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Content" Type="Edm.String" Nullable="false" sap:unicode="false" sap:label="CONTENT" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Filename" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Char255" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/><Property Name="Filetype" Type="Edm.String" Nullable="false" MaxLength="255" sap:unicode="false" sap:label="Char255" sap:creatable="false"
+					sap:updatable="false" sap:sortable="false" sap:filterable="false"/></EntityType>
+			<EntityContainer Name="ZSFA_MOSQUEPROOFOFDELIVERY_SRV_Entities" m:IsDefaultEntityContainer="true" sap:supported-formats="atom json xlsx"><EntitySet Name="statusSet" EntityType="ZSFA_MOSQUEPROOFOFDELIVERY_SRV.status" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/><EntitySet Name="attachmentsSet" EntityType="ZSFA_MOSQUEPROOFOFDELIVERY_SRV.attachments" sap:creatable="false" sap:updatable="false"
+				sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/><EntitySet Name="attachmentsContentSet" EntityType="ZSFA_MOSQUEPROOFOFDELIVERY_SRV.attachmentsContent" sap:creatable="false"
+				sap:updatable="false" sap:deletable="false" sap:pageable="false" sap:addressable="false" sap:content-version="1"/></EntityContainer><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="self" href="./sap/ZSFA_MOSQUEPROOFOFDELIVERY_SRV/$metadata"/><atom:link xmlns:atom="http://www.w3.org/2005/Atom" rel="latest-version" href="./sap/ZSFA_MOSQUEPROOFOFDELIVERY_SRV/$metadata"/></Schema>
+	</edmx:DataServices>
+</edmx:Edmx>
